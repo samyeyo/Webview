@@ -8,6 +8,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/__LuaRT__?style=social)](https://www.twitter.com/__LuaRT__)
 
 [Features](#small_blue_diamondfeatures) |
+[Requirements](#small_blue_diamondrequirements) |
 [Installation](#small_blue_diamondinstallation) |
 [Usage](#small_blue_diamondusage) |
 [Documentation](https://www.luart.org/doc/webview/index.html) |
@@ -26,17 +27,17 @@
 - Render files from a virtual host (ie a local folder)
 - No other dependencies (no need for `Webview2Loader.dll`)
   
-## :small_blue_diamond:Installation
-
-### Requirements
+## :small_blue_diamond:Requirements
 
 #### LuaRT programming framework
 Webview for LuaRT is not a standalone module, it depends on the LuaRT toolchain which must have already been installed before proceeding.
-Go to (LuaRT Homepage)[https://www.luart.org] to it.
+Go to (LuaRT Homepage)[https://www.luart.org] if you have not already installed it.
 
 #### Microsoft Edge Webview2 runtime
-Webview for LuaRT depends on the Microsoft Edge Webview2 runtime installed on your Windows operating system.
+Webview for LuaRT depends on the Microsoft Edge Webview2 runtime.
 The runtime is already installed on Windows 10 and Windows 11. If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/fr-fr/microsoft-edge/webview2/)
+
+## :small_blue_diamond:Installation
 
 ### Installation
 
@@ -63,7 +64,7 @@ make
 LuaRT path and platform will then be autodetected. If it failed, you can still set the `LUART_PATH` variable in the Makefile.  
 If everything went right, it will produce the `Webview.dll` LuaRT binary module.
 
-To install the module in the `modules\` folder of your LuaRT distribution type :
+To install the module in the `modules\` folder of your LuaRT distribution type the following command :
 
 ```
 make install
@@ -74,6 +75,7 @@ The LuaRT module must be used by the desktop LuaRT interpreter, `wluart.exe`.
 To use the LuaRT module in your applications, just require for the `webview` module to load it.
 
 Once loaded, the Webview widget is added to the `ui` module and can be used as in this script :
+
 ```lua
 local ui = require "ui"
 require "webview"
@@ -82,7 +84,7 @@ require "webview"
 local win = ui.Window("Webview for LuaRT", 640, 540)
 
 -- Creates a Webview widget
-local wv = ui.Webview(win, "https://webview.github.io")
+local wv = ui.Webview(win, "https://www.luart.org")
 
 -- Make it aligned to the entire window
 wv.align = "all"
@@ -104,8 +106,8 @@ Webview for LuaRT aims to be lightweight, with a small footprint. The previous e
 
 ## :small_blue_diamond:Documentation
   
-- :home: [Homepage](http://webview.github.io/index.html)
-- :book: [Webview for LuaRT Documentation](http://www.luart.org/doc/webview.html)
+- :house_with_garden: [Homepage](https://www.luart.org)
+- :book: [Webview for LuaRT Documentation](https://www.luart.org/doc/webview.html)
   
 ## :small_blue_diamond:License
   
