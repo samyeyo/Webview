@@ -99,9 +99,9 @@ while win.visible do
 end
 ```
 > **Note**
-
-> The `Webview.dll` library must be in the current directory, or in your `LUA_CPATH` 
-
+> 
+> The `Webview.dll` library must be in the current directory, or in your `LUA_CPATH`
+> 
 > The `Webview.dll` can be loaded in memory if you compile your application with the `rtc` compiler
 
 Webview for LuaRT aims to be lightweight, with a small footprint. The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU
