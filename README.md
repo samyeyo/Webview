@@ -78,7 +78,7 @@ Once loaded, the Webview widget is added to the `ui` module and can be used as i
 
 ```lua
 -- save this script as 'example.wlua'
--- Run it with 'wluart example.wlua' or double-click on it on a Window explorer window
+-- Run it with 'wluart example.wlua' or double-click on it on a Windows explorer window
 
 local ui = require "ui"
 require "webview"
