@@ -21,7 +21,7 @@
 - LuaRT binary module wrapping the Microsoft Edge Webview2 component
 - HTML/Javascript/CSS render widget for Windows 7 and later
 - Embed web content (HTML, CSS, and JavaScript) in your LuaRT applications
-- Build fast and lightweight Web Applications (in less than 300kb !)
+- Build fast and lightweight Web Applications (in less than 300kb !), no .NET, no UWP, no WinRT
 - Messages based communication between LuaRT (backend) and Javascript (frontend)
 - Evaluate Javascript expressions dynamically in your Lua application
 - Render files from a virtual host (ie a local folder)
