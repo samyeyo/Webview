@@ -13,7 +13,7 @@
 
 
 #---- LuaRT installation path (set it manually if autodetection fails)
-LUART_PATH=D:\GitHub\LuaRT
+LUART_PATH=
 
 MODULE=Webview
 VERSION=0.5
