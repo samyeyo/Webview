@@ -13,7 +13,7 @@
 
 
 #---- LuaRT installation path (set it manually if autodetection fails)
-LUART_PATH=
+LUART_PATH=D:\Github\LuaRT
 
 MODULE=Webview
 VERSION=0.5
@@ -62,11 +62,11 @@ CP= copy /Y
 
 default: all
 
-all: $(MODULE)
+all: $(MODULE).dll
 
-$(MODULE): src/webview.cpp src/handler.cpp src/WebView2Loader.cpp
+$(MODULE).dll: src/webview.cpp src/handler.cpp src/WebView2Loader.cpp
 	@$(LUART_PATH)\bin\luart -e "require('console').writecolor('blue', '--------------- Building $(MODULE) for LuaRT $(PLATFORM)\n')"
-	$(CXX) $(CFLAGS) $^ $(LDFLAGS) $(LIBS) -o $@.dll
+	$(CXX) $(CFLAGS) $^ $(LDFLAGS) $(LIBS) -o $@
 	@$(LUART_PATH)\bin\luart -e "require('console').writecolor('blue', '--------------- Successfully built $(MODULE) for LuaRT $(PLATFORM)\n')"
 
 debug:
