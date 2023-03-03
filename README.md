@@ -44,8 +44,9 @@ If not, follow this link to download and install the [Microsoft Edge Webview2 ru
 #### Method 1 : Webview for LuaRT release package :package:
 
 The preferred way to get the Webview widget is to download the latest binary release available on GitHub.
-Be sure to download the archive that correspond to your LuaRT toolchain (`x64` or `x86`).
-Download the latest release package on GitHub. Just unpack the downloaded archive to get the `Webview.dll` LuaRT binary module, and put it in the `modules\` folder or your LuaRT distribution.
+Be sure to download the package that correspond to your LuaRT toolchain (`x64` or `x86`).
+
+Just unpack the downloaded archive to get the `Webview.dll` LuaRT binary module, and put it in the `modules\` folder of your LuaRT distribution.
   
 #### Method 2 : Webview for LuaRT from sources :gear:
 
@@ -106,7 +107,7 @@ end
 > 
 > The `Webview.dll` library must be in the current directory, or in your `LUA_CPATH`
 > 
-> The `Webview.dll` can be loaded in memory if you compile your application with the `rtc` compiler
+> The `Webview.dll` can be loaded in memory if you compile your application to executable with the `rtc` compiler
 
 Webview for LuaRT aims to be lightweight, with a small footprint. 
 The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU.
