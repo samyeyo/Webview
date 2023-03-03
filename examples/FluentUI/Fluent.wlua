@@ -16,7 +16,7 @@ function wv:onLoaded()
     wv:postmessage('{ "id": "cpuname", "text": "'..sys.registry.read('HKEY_LOCAL_MACHINE', 'Hardware\\Description\\System\\CentralProcessor\\0', 'ProcessorNameString')..'"}', true)
     wv:postmessage(' {"show": true}')
     wv:postmessage('{ "id": "graphic", "text": "'..sys.registry.read('HKEY_LOCAL_MACHINE', 'SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WinSAT', 'PrimaryAdapterString')..'"}', true)
-    wv:postmessage('{ "id": "memorysize", "text": "'..math.floor(sys.Pipe("wmic computersystem get TotalPhysicalMemory"):read(300):match("(%d+)")/1000000000).." Gb"..'"}', true)
+    wv:postmessage('{ "id": "memorysize", "text": "'..math.floor(sys.Pipe("wmic computersystem get TotalPhysicalMemory"):read(350):match("(%d+)")/1000000000).." Gb"..'"}', true)
 end
 
 function wv:onReady()
