@@ -3,7 +3,7 @@
 ![Webview for LuaRT][title] 
 
 [![LuaRT Widget](https://badgen.net/badge/LuaRT/Widget/yellow)](https://www.luart.org/)
-![Windows](https://badgen.net/badge/Windows/10%20and%20later/blue?icon=windows)
+![Windows](https://badgen.net/badge/Windows/7%20and%20later/blue?icon=windows)
 [![LuaRT license](https://badgen.net/badge/License/MIT/green)](#license)
 [![Twitter Follow](https://img.shields.io/twitter/follow/__LuaRT__?style=social)](https://www.twitter.com/__LuaRT__)
 
@@ -77,6 +77,9 @@ To use the LuaRT module in your applications, just require for the `webview` mod
 Once loaded, the Webview widget is added to the `ui` module and can be used as in this script :
 
 ```lua
+-- save this script as 'example.wlua'
+-- Run it with 'wluart example.wlua' or double-click on it on a Window explorer window
+
 local ui = require "ui"
 require "webview"
 
@@ -104,7 +107,9 @@ end
 > 
 > The `Webview.dll` can be loaded in memory if you compile your application with the `rtc` compiler
 
-Webview for LuaRT aims to be lightweight, with a small footprint. The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU
+Webview for LuaRT aims to be lightweight, with a small footprint. 
+The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU.
+Don't hesitate to run the provided examples to get more familiar with the Webview widget, and to dive into the documentation.
 
 ## :small_blue_diamond:Documentation
   
