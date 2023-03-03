@@ -31,11 +31,11 @@
 
 #### LuaRT programming framework
 Webview for LuaRT is not a standalone module, it depends on the LuaRT toolchain which must have already been installed before proceeding.
-Go to (LuaRT Homepage)[https://www.luart.org] if you have not already installed it.
+Go to the [LuaRT Homepage](https://www.luart.org) if you have not already installed it.
 
 #### Microsoft Edge Webview2 runtime
-Webview for LuaRT depends on the Microsoft Edge Webview2 runtime.
-The runtime is already installed on Windows 10 and Windows 11. If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/fr-fr/microsoft-edge/webview2/)
+Webview for LuaRT depends on the Microsoft Edge Webview2 runtime.The runtime is already installed on Windows 10 and Windows 11.
+If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
 
 ## :small_blue_diamond:Installation
 
