@@ -44,6 +44,7 @@ The runtime is already installed on Windows 10 and Windows 11. If not, follow th
 #### Method 1 : Webview for LuaRT release package :package:
 
 The preferred way to get the Webview widget is to download the latest binary release available on GitHub.
+Be sure to download the archive that correspond to your LuaRT toolchain (`x64` or `x86`).
 Download the latest release package on GitHub. Just unpack the downloaded archive to get the `Webview.dll` LuaRT binary module, and put it in the `modules\` folder or your LuaRT distribution.
   
 #### Method 2 : Webview for LuaRT from sources :gear:
