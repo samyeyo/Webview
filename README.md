@@ -111,7 +111,8 @@ end
 
 Webview for LuaRT aims to be lightweight, with a small footprint. 
 The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU.
-Don't hesitate to run the provided examples to get more familiar with the Webview widget, and to dive into the documentation.
+
+Don't hesitate to run the provided examples to get more familiar with the Webview widget, and to read the documentation for the various methods and properties (see link below).
 
 ## :small_blue_diamond:Documentation
   
