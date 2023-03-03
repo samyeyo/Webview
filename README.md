@@ -38,6 +38,8 @@ Go to (LuaRT Homepage)[https://www.luart.org] to it.
 Webview for LuaRT depends on the Microsoft Edge Webview2 runtime installed on your Windows operating system.
 The runtime is already installed on Windows 10 and Windows 11. If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/fr-fr/microsoft-edge/webview2/)
 
+### Installation
+
 #### Method 1 : Webview for LuaRT release package :package:
 
 The preferred way to get the Webview widget is to download the latest binary release available on GitHub.
