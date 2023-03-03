@@ -3,7 +3,7 @@
 ![Webview for LuaRT][title] 
 
 [![LuaRT Widget](https://badgen.net/badge/LuaRT/Widget/yellow)](https://www.luart.org/)
-![Windows](https://badgen.net/badge/Windows/10%20and%20later/blue?icon=windows)
+![Windows](https://badgen.net/badge/Windows/7%20and%20later/blue?icon=windows)
 [![LuaRT license](https://badgen.net/badge/License/MIT/green)](#license)
 [![Twitter Follow](https://img.shields.io/twitter/follow/__LuaRT__?style=social)](https://www.twitter.com/__LuaRT__)
 
@@ -21,21 +21,23 @@
 - LuaRT binary module wrapping the Microsoft Edge Webview2 component
 - HTML/Javascript/CSS render widget for Windows 7 and later
 - Embed web content (HTML, CSS, and JavaScript) in your LuaRT applications
-- Build fast and lightweight Web Applications (in less than 300kb !)
+- Build fast and lightweight Web Applications (in less than 300kb !), no .NET, no UWP, no WinRT
 - Messages based communication between LuaRT (backend) and Javascript (frontend)
 - Evaluate Javascript expressions dynamically in your Lua application
 - Render files from a virtual host (ie a local folder)
 - No other dependencies (no need for `Webview2Loader.dll`)
+
+Check out [Webview's homepage](https://samyeyo.github.io/Webview/index.html) for a short presentation.
   
 ## :small_blue_diamond:Requirements
 
 #### LuaRT programming framework
 Webview for LuaRT is not a standalone module, it depends on the LuaRT toolchain which must have already been installed before proceeding.
-Go to (LuaRT Homepage)[https://www.luart.org] if you have not already installed it.
+Go to the [LuaRT Homepage](https://www.luart.org) if you have not already installed it.
 
 #### Microsoft Edge Webview2 runtime
-Webview for LuaRT depends on the Microsoft Edge Webview2 runtime.
-The runtime is already installed on Windows 10 and Windows 11. If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/fr-fr/microsoft-edge/webview2/)
+Webview for LuaRT depends on the Microsoft Edge Webview2 runtime.The runtime is already installed on Windows 10 and Windows 11.
+If not, follow this link to download and install the [Microsoft Edge Webview2 runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
 
 ## :small_blue_diamond:Installation
 
@@ -44,7 +46,9 @@ The runtime is already installed on Windows 10 and Windows 11. If not, follow th
 #### Method 1 : Webview for LuaRT release package :package:
 
 The preferred way to get the Webview widget is to download the latest binary release available on GitHub.
-Download the latest release package on GitHub. Just unpack the downloaded archive to get the `Webview.dll` LuaRT binary module, and put it in the `modules\` folder or your LuaRT distribution.
+Be sure to download the package that correspond to your LuaRT toolchain (`x64` or `x86`).
+
+Just unpack the downloaded archive to get the `Webview.dll` LuaRT binary module, and put it in the `modules\` folder of your LuaRT distribution.
   
 #### Method 2 : Webview for LuaRT from sources :gear:
 
@@ -77,6 +81,9 @@ To use the LuaRT module in your applications, just require for the `webview` mod
 Once loaded, the Webview widget is added to the `ui` module and can be used as in this script :
 
 ```lua
+-- save this script as 'example.wlua'
+-- Run it with 'wluart example.wlua' or double-click on it on a Windows explorer window
+
 local ui = require "ui"
 require "webview"
 
@@ -102,13 +109,16 @@ end
 > 
 > The `Webview.dll` library must be in the current directory, or in your `LUA_CPATH`
 > 
-> The `Webview.dll` can be loaded in memory if you compile your application with the `rtc` compiler
+> The `Webview.dll` can be loaded in memory if you compile your application to executable with the `rtc` compiler
 
-Webview for LuaRT aims to be lightweight, with a small footprint. The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU
+Webview for LuaRT aims to be lightweight, with a small footprint. 
+The previous example, once compiled to executable, represent only 250kb in size, consumes 256Mb of RAM and 3.7% of CPU.
+
+Don't hesitate to run the provided examples to get more familiar with the Webview widget, and to read the documentation for the various methods and properties (see link below).
 
 ## :small_blue_diamond:Documentation
   
-- :house_with_garden: [Homepage](https://www.luart.org)
+- :house_with_garden: [Homepage](https://samyeyo.github.io/Webview/index.html)
 - :book: [Webview for LuaRT Documentation](https://www.luart.org/doc/webview.html)
   
 ## :small_blue_diamond:License
