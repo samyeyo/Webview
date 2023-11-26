@@ -14,7 +14,10 @@
 [Documentation](https://www.luart.org/doc/webview/index.html) |
 [License](#small_blue_diamondlicense)
 
+<p><center> ℹ <b>Webview project is now deprecated, as it is now part of the LuaRT distribution</b> </center></p>
+
 </div>
+
    
 ## :small_blue_diamond:Features
 
